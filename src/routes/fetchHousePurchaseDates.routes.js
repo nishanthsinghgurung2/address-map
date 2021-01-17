@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import { findAll } from '../controller/fetchHousePurchaseDates.controller';
+import { findHousePurchaseDatesController } from '../controller/fetchHousePurchaseDates.controller';
 
 const router = Router();
 
-router.get('/', findAll);
+router.get('/', findHousePurchaseDatesController);
 
 export default router;
